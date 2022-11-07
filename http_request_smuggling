@@ -61,7 +61,7 @@ x=1
 
 ==================
 
-//change target GET request to POST
+//Detection
 
 Content-Type: application/x-www-form-urlencoded
 Content-length: 4
@@ -77,7 +77,7 @@ x=1
 
 =================
 
-//change target GET request to POST
+//Detection
 
 Content-Type: application/x-www-form-urlencoded
 Content-length: 4
