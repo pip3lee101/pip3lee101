@@ -7,3 +7,6 @@
 
 //// param miner
 (Request.Headers CONTAINS "X") AND Request.Host CONTAINS "web-security-academy.net"
+
+//// CORs
+(Response.Headers CONTAINS "Access-Control-Allow-Origin") AND Request.Host CONTAINS "web-security-academy.net"
