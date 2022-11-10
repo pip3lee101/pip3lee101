@@ -1,0 +1,1 @@
+grep http ./file.txt | sed 's/http/\nhttp/g' | grep ^http | sed 's/\(^http[^ <]*\)\(.*\)/\1/g' 
